@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'NEXUS COMMAND CENTER',
   description: 'Transforming Admin Tasks Into Epic Quests',
   generator: 'React.js',
+  icons: {
+    icon: '/fav.png',
+  },
 }
 
 export default function RootLayout({
