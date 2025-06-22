@@ -13,114 +13,128 @@
 
 [🚀 Live Preview](https://your-live-demo-link.com) • [📚 Docs](https://your-docs-link.com) • [🐛 Report Bug](https://github.com/yourrepo/issues)
 
+<img src="screenshots/dashboard-preview.png" alt="Gamified Admin Arena Dashboard" width="700"/>
+
 </div>
 
 ---
 
 ## 🔮 What is Gamified Admin Arena?
 
-## ✨ Core Features
+**Gamified Admin Arena** is a vibrant, retro-themed admin dashboard built with **React.js** that transforms mundane admin operations into engaging gamified missions. Earn XP, level up, unlock badges, customize your avatar, and even switch to 8-bit Retro Mode for that nostalgic feel!
 
 ---
 
-### ✅ Dashboard UI
+## ✨ Core Features
 
-- 🎛️ **Sidebar** with intuitive icons  
-- 📈 Modules: **Kanban**, **Calendar**, **Charts**, **Tables**  
-- 🔁 Page navigation using **React Router**  
-- 🧪 Responsive layout and dynamic UI feedback  
+### Dashboard UI
+
+- 🧭 Sidebar with XP & Level indicators  
+- 📊 Modules: **Kanban**, **Calendar**, **Charts**, **Tables**  
+- 🔁 Navigation via **React Router**  
+- 📱 Responsive layout and smooth interactions  
 
 ---
 
 ### 🧠 Gamification Engine
 
-- 🧮 **XP Rewards** per action:
-  - ✅ Complete Task → +20 XP  
-  - 📅 Calendar Check-Off → +10 XP  
-  - 📤 Share Report → +15 XP  
+- 🧮 XP Rewards for key actions:
+  - ✅ Task Completion → +20 XP  
+  - 📅 Calendar Check-In → +10 XP  
+  - 📤 Share Reports → +15 XP  
   - 🔐 Daily Login Bonus → +5 XP  
-- 📊 **Level System** based on XP thresholds  
-- 💾 Data stored in `localStorage` or **Firebase**  
+- 📈 Progression with level thresholds  
+- 💾 Data stored via `localStorage` or **Firebase**  
+
+<img src="screenshots/xp-tracker.png" alt="XP Tracker" width="600"/>
 
 ---
 
 ### 🧍 Avatar Builder
 
-- ✨ Choose your base character:
-  - 🧙 Mage  
-  - 🥷 Ninja  
-  - 🤖 Robot  
-- 🎩 Add accessories: Hats, Glasses, Weapons  
-- 🖼️ SVG-based layering system with local save support  
+- 👤 Choose from: 🧙 Mage, 🥷 Ninja, 🤖 Robot  
+- 🧢 Add accessories (Glasses, Hats, Weapons)  
+- 🧩 SVG-based layering with local saving  
 
----
+```jsx
+<Avatar base="ninja" accessories={["glasses", "hat"]} />
+
 
 ### 🏅 Achievements & Badges
-
-- 🎯 **Task Terminator** – Complete 50+ tasks  
-- 📅 **Calendar Commander** – Active for 5 days  
-- 🏆 Dynamic modals and badge displays in profile  
-
----
+- 🎯 Task Terminator: Complete 50 tasks  
+- 📅 Calendar Commander: Use calendar 5 consecutive days  
+- Earn & view badges in dynamic modals and user profile
 
 ### 🏆 Leaderboard
-
-- 📍 Local Top 5 users based on XP  
-- ☁️ Firebase optional for global leaderboard  
-
----
+- Local Top 5 XP scorers
+- Firebase support for global scoreboard
 
 ### 👾 Retro Mode
-
-- 🎮 **8-bit UI** powered by NES.css + Tailwind  
-- 🕹️ Retro sound FX, pixel fonts, transitions  
-- 🧲 Toggle in settings panel  
-
----
+- 8-bit NES-style UI with pixel fonts & FX  
+- NES.css integration with Tailwind  
+- Toggle retro mode in settings
 
 ### 🎨 Theme Store
-
-- 🌈 Unlockable UI themes:
+- Unlock and preview live UI themes:
   - Neon Pulse  
   - Forest Magic  
   - Cyber Dark  
-- 💸 Use XP to unlock and apply themes live  
-
----
+- Use XP to purchase & activate themes
 
 ### 💬 UX Feedback
+- 🎉 Confetti explosions on level-up  
+- 🔊 SFX using Howler.js  
+- 🧍 Avatar reacts to XP gain  
+- ⚡ Modal popups for badge unlocks
 
-- 🎉 Confetti animations using Framer Motion  
-- 🔊 Sound effects via Howler.js  
-- 🧍 Avatar interactions on XP events  
-- ⚡ Fun modals for levels & badges  
 ---
 
-## 📦 Architecture Overview
+## 🧰 Tech Stack
 
-```mermaid
-graph TD
-    A[Gamified Admin Arena] --> B[Dashboard UI]
-    A --> C[Gamification Engine]
-    A --> D[Avatar Builder]
-    A --> E[Leaderboard System]
-    A --> F[Retro Mode Toggle]
-    A --> G[Theme Store & Unlocks]
-    A --> H[Achievements & Badges]
-    A --> I[Easter Egg Engine]
-    C --> J[XP Tracker]
-    C --> K[Level Logic]
-    D --> L[SVG Renderer]
-    F --> M[NES.css Integration]
-    G --> N[Live Theme Previews]
+| Category        | Technology                | Purpose                                  |
+|----------------|---------------------------|------------------------------------------|
+| 🎨 Styling      | Tailwind CSS, NES.css     | Responsive modern + retro UI             |
+| ⚛️ UI Framework | React 18                  | Component-based frontend architecture     |
+| 🔁 Routing      | React Router              | Page-level navigation                    |
+| 📊 Charts       | Recharts, Chart.js        | Analytics and performance visuals        |
+| 📅 Calendar     | FullCalendar React        | Task scheduling and event timeline       |
+| 🧠 State Mgmt   | Context API / Zustand     | Global state for XP, avatars, themes     |
+| 🔊 Audio        | Howler.js                 | Audio feedback and retro SFX             |
+| 📦 Storage      | localStorage / Firebase   | User persistence & XP tracking           |
+| 🎞️ Animation   | Framer Motion, Lottie     | Animations for interactions & rewards    |
+| 🧩 Kanban       | React Beautiful DnD       | Drag-and-drop task management            |
 
+---
 
-**Gamified Admin Arena** is a vibrant, retro-themed admin dashboard built with **React.js** that transforms mundane admin tasks into a gamified adventure. Complete tasks, earn XP, level up, collect badges, customize avatars, unlock themes, and uncover easter eggs!
+### 📋 **Contribution Guidelines**
 
-```text
-📋 Task Completed ➡️ +XP  
-🧍 Avatar Unlocked 🎩  
-🏆 Badge Earned 🎖️  
-🎮 Retro Mode Activated 👾  
-🌈 Theme Applied 🎨  
-🥚 Easter Egg Found 🔓  
+- Follow the existing code style
+- Add tests for new features
+- Update documentation
+- Ensure all tests pass
+- Keep commits atomic and descriptive
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+<div align="center">
+
+**Built with cosmic inspiration and stellar dedication**
+
+Special thanks to:
+- 🌟 The React team for the amazing framework
+- 🎨 Tailwind CSS for beautiful styling utilities  
+- 🔊 Web Audio API for immersive sound design
+- 🚀 Next.js for the powerful development experience
+
+---
+
+<sub>Made with ❤️ and ☕ by Jatin Mittal who believe productivity should be out of this world</sub>
+
+**[⭐ Star this repo](https://github.com/Jat21in/space-todo)** • **[🐛 Report Bug](https://github.com/Jat21in/space-todo/issues)** • **[💡 Request Feature](https://github.com/Jat21in/space-todo/issues)**
+
+</div>
+```
