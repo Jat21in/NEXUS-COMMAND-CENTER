@@ -46,8 +46,6 @@
 - 📈 Progression with level thresholds  
 - 💾 Data stored via `localStorage` or **Firebase**  
 
-<img src="screenshots/xp-tracker.png" alt="XP Tracker" width="600"/>
-
 ---
 
 ### 🧍 Avatar Builder
@@ -55,10 +53,6 @@
 - 👤 Choose from: 🧙 Mage, 🥷 Ninja, 🤖 Robot  
 - 🧢 Add accessories (Glasses, Hats, Weapons)  
 - 🧩 SVG-based layering with local saving  
-
-```jsx
-<Avatar base="ninja" accessories={["glasses", "hat"]} />
-
 
 ### 🏅 Achievements & Badges
 - 🎯 Task Terminator: Complete 50 tasks  
@@ -125,10 +119,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Built with cosmic inspiration and stellar dedication**
 
 Special thanks to:
-- 🌟 The React team for the amazing framework
-- 🎨 Tailwind CSS for beautiful styling utilities  
-- 🔊 Web Audio API for immersive sound design
-- 🚀 Next.js for the powerful development experience
+ 🌟 The React team for the amazing framework
+ 🎨 Tailwind CSS for beautiful styling utilities  
+ 🔊 Web Audio API for immersive sound design
+ 🚀 Next.js for the powerful development experience
 
 ---
 
@@ -137,4 +131,3 @@ Special thanks to:
 **[⭐ Star this repo](https://github.com/Jat21in/space-todo)** • **[🐛 Report Bug](https://github.com/Jat21in/space-todo/issues)** • **[💡 Request Feature](https://github.com/Jat21in/space-todo/issues)**
 
 </div>
-```
