@@ -13,7 +13,7 @@
 
 [🚀 Live Preview](https://your-live-demo-link.com) • [📚 Docs](https://your-docs-link.com) • [🐛 Report Bug](https://github.com/yourrepo/issues)
 
-<img src="screenshots/dashboard-preview.png" alt="Gamified Admin Arena Dashboard" width="700"/>
+<img src="public/dashboard.png" alt="Gamified Admin Arena Dashboard" width="700"/>
 
 </div>
 
